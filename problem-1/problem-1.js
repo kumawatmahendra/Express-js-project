@@ -12,7 +12,7 @@ app.get('/student/getdetail', (req, res) => {
     });
 });
 
-app.get('/student/add',(req,res)=> {
+app.post('/student/add',(req,res)=> {
     const newObject = {
         studentFirstName:req.query.studentFirstName,
         collegeName:req.query.collegeName,
